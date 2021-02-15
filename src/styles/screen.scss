@@ -1,0 +1,39 @@
+.screen {
+  background: $white;
+  margin: 1em;
+  padding-left: .5em;
+  height: calc(100% - 110px);
+  overflow-y: auto;
+
+  &__list {
+    margin: 0;
+    padding: .5em 1em 0 .3em;
+  }
+}
+
+.message {
+  padding: .5em;
+  margin-bottom: .5em;
+  box-sizing: border-box;
+  background: $gray-light;
+
+  &__meta {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  &__user, &__body {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__user {
+    max-width: 150px;
+  }
+
+  &__time {
+    font-size: .8em;
+  }
+}

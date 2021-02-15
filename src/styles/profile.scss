@@ -1,0 +1,23 @@
+.profile {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginform {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 30%;
+
+  &__input {
+    width: 70%;
+    outline: none;
+    padding: .3em;
+  }
+
+  &__submit {
+    width: 25%;
+  }
+}

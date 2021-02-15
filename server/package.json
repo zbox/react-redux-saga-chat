@@ -1,0 +1,23 @@
+{
+  "name": "react-redux-saga-chat-server",
+  "description": "SPA chat application Websocket server",
+  "version": "1.0.0",
+  "author": {
+    "name": "Alexander Zhukov",
+    "email": "zbox82@gmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "TS_NODE_FILES=true tsc -p tsconfig.json & node dist/index.js"
+  },
+  "dependencies": {
+    "uuid": "^8.3.2",
+    "ws": "^7.4.3"
+  },
+  "devDependencies": {
+    "@types/ws": "^7.4.0",
+    "eslint": "^7.19.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}

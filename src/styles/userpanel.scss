@@ -1,0 +1,35 @@
+.userlist {
+  width: 20%;
+  min-width: 200px;
+  height: calc(100% - 70px);
+  margin: 1em 0;
+  padding: .5em;
+  background: $white;
+  @media screen and (max-width: 699px) {
+    & {
+      display: none;
+      //margin: 1em;
+      //width: auto;
+      //height: auto;
+    }
+  }
+  &__list {
+    padding: 0;
+    max-width: 190px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  &__item span {
+    font-size: .8em;
+  }
+  &__item span:first-child {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70%;
+  }
+}

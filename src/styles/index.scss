@@ -1,0 +1,17 @@
+@import "variables";
+@import "profile";
+@import "chat";
+@import "userpanel";
+@import "screen";
+@import "messagebox";
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: $background;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
